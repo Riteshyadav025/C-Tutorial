@@ -3,5 +3,6 @@ using namespace std;
 int main(){
   char ch;
   cin>>ch;
-  cout<<(int)ch; //char to int
+  int x = (int)ch;
+  cout<<x; //char to int
 }
