@@ -5,12 +5,8 @@ int main(){
   cout<<"Enter a Number : ";
   cin>>n;
   int product = 1;
-  while(n!=0){
-    int ld = n%10;
-    n /= 10; // n/10
-    product *= ld;
+  for(int i=1;i<=n;i++){
+    product *= i;
   }
-  cout<<product;
+    cout<<product;
 }
-
-

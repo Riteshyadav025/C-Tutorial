@@ -4,13 +4,13 @@ int main(){
   int n;
   cout<<"Enter a Number : ";
   cin>>n;
-  int product = 1;
+  int r = 0;
   while(n!=0){
     int ld = n%10;
-    n /= 10; // n/10
-    product *= ld;
+    r *= 10;
+    r += ld;
+    n /= 10;
+    
   }
-  cout<<product;
+  cout<<r;
 }
-
-
