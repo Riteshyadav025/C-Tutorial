@@ -1,13 +1,12 @@
 #include<iostream>
 using namespace std;
-void print(int n){
-  if(n==0) return;
-  cout<<n<<endl;
-  print(n-1);
+int fibo(int n){
+  if(n==1 || n==2) return 1;
+  return fibo(n-1) + fibo(n-2);
 }
 int main(){
   int n;
   cout<<"Enter n : ";
   cin>>n;
-  print(n);
+  cout<<fibo(n);
 }
